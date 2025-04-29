@@ -1,0 +1,58 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 32,
+    "spacing": 18,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "network",
+        "clock"
+    ],
+    "hyprland/workspaces": {
+        "format": "({icon})",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "persistent-workspaces": {
+            "*": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    },
+    "hyprland/window": {
+        "icon": true,
+        "icon-size": 14,
+        "tooltip": false
+    },
+    "cpu": {
+        "interval": 5,
+        "format": "  {}%"
+    },
+    "memory": {
+        "interval": 5,
+        "format": "  {used}GiB ({percentage}%)",
+        "tooltip": false
+    },
+    "network": {
+        "interval": 5,
+        "format": "󰛳  {bandwidthTotalBytes}",
+        "format-disconnected": "󰲛  disconnected",
+        "tooltip": true,
+        "tooltip-format": "connected ({ifname})\naddr: {ipaddr}",
+        "tooltip-format-disconnected": "disconnected\nmaybe its time to touch grass..?"
+    },
+    "clock": {
+        "format": "󰥔  {:%H:%M}",
+        "tooltip": false
+    }
+}

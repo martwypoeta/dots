@@ -1,0 +1,29 @@
+window {
+    margin: 0;
+    background: #181818;
+    color: #e0e0e0;
+    font: 15px "FiraCode Nerd Font";
+}
+
+#input {
+    border: none;
+    border-radius: 0;
+    background: #292929;
+    color: white;
+}
+
+#input:focus {
+    box-shadow: none;
+}
+
+#img {
+    margin-right: 6px;
+}
+
+#entry {
+    padding: 6px;
+}
+
+#entry:selected {
+    background: #2f2f2f;
+}
