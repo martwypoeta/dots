@@ -32,7 +32,8 @@
     "hyprland/window": {
         "icon": true,
         "icon-size": 14,
-        "tooltip": false
+        "tooltip": false,
+        "max-length": 70
     },
     "cpu": {
         "interval": 5,
