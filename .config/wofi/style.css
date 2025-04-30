@@ -1,7 +1,7 @@
 window {
     margin: 0;
-    background: #181818;
-    color: #e0e0e0;
+    background: #1a1a1a;
+    color: white;
     font: 15px "FiraCode Nerd Font";
 }
 
@@ -24,6 +24,10 @@ window {
     padding: 6px;
 }
 
+#text:selected {
+    color: black;
+}
+
 #entry:selected {
-    background: #2f2f2f;
+    background: #a8dc63;
 }
