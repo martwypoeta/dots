@@ -1,8 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "FiraCode Nerd Font";
-    font-size: 13px;
+    font: 13px "FiraCode Nerd Font";
 }
 
 window#waybar {
@@ -16,7 +15,7 @@ window#waybar {
 
 #workspaces button {
     padding: 0 4px;
-    color: #d7d7d7;
+    color: white;
     box-shadow: none;
     text-shadow: none;
     background: none;
