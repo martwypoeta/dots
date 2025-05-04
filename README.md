@@ -1,16 +1,16 @@
 # martwypoeta/dots
 
-my dotfiles for arch with hyprland. everything here was mostly made by me, which means it can and will be dogwater.
+My dotfiles for Arch with Hyprland. Everything here was mostly made by me, which means it can (and probably will) be dogwater.
 
-## screenshots
+## Screenshots
 
 ![](screenshots/preview.png)
 
-## installation
+## Installation
 
-if you really want to use it, just copy over stuff from this repo to your home folder except for:
+If you really want to use it, just copy everything from this repo to your home folder **except**:
 
 - `README.md`
 - `screenshots/`
 
-and install all required packages (i'm sure you can deduce everything from `.config`)
+And install all required packages (I'm sure you can deduce everything from `.config`).
