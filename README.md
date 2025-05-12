@@ -30,7 +30,9 @@ Install all of the required dependencies with your favourite package manager.
 <details>
 
 <summary>
-#### pacman
+
+##### Arch Linux (`pacman`)
+
 </summary>
 
 ```bash
