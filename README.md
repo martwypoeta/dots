@@ -31,14 +31,24 @@ Install all of the required dependencies with your favourite package manager.
 
 <summary>
 
-##### Arch Linux (`pacman`)
+Arch Linux (<code>pacman</code>)
 
 </summary>
 
 ```bash
-pacman -S --needed fastfetch git hyprland nano bat tree zsh
+pacman -S --needed \
+  hyprland git zsh kitty \
+  nano bat tree
 ```
 
 </details>
 
-Done! You can now play with your system until it breaks (near future).
+### (Optional) Post-install
+
+#### zsh
+
+Change current user shell to zsh.
+
+```bash
+chsh -s $(which zsh)
+```
