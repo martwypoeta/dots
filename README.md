@@ -27,10 +27,11 @@ chmod +x ./arch-link.sh
 
 Install all of the required dependencies with your favourite package manager.
 
-#### pacman
-
+<details>
+<summary>pacman</summary>
 ```bash
 pacman -S --needed fastfetch git hyprland nano bat tree zsh
 ```
+</details>
 
 Done! You can now play with your system until it breaks (near future).
