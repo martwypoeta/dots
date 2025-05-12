@@ -1,0 +1,18 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 0,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["clock"],
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "*": [1, 2, 3]
+    }
+  },
+  "hyprland/window": {
+    "max-length": 80,
+    "tooltip": false
+  },
+}

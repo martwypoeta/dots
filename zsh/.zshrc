@@ -20,4 +20,3 @@ alias ...='cd ../..'
 
 # fastfetch
 fastfetch
-

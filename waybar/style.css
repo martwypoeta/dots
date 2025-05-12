@@ -1,0 +1,45 @@
+* {
+  font-family: 'Iosevka Nerd Font';
+  font-weight: 700;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: #1d2021;
+  color: #ebdbb2;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button {
+  padding: 0 7px;
+  color: #ebdbb2;
+  background-color: transparent;
+}
+
+/* https://github.com/Alexays/Waybar/issues/60#issuecomment-1604253114 */
+button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+  transition: none;
+}
+
+#workspaces button.active {
+  background-color: #b8bb26;
+  color: #282828;
+}
+
+#workspaces button.urgent {
+  background-color: #fb4934;
+  color: #282828;
+}
+
+#clock {
+  padding: 0 16px;
+  color: #1d2021;
+  background-color: #ebdbb2;
+}

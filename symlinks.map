@@ -3,3 +3,5 @@ kitty,~/.config/kitty
 nano,~/.config/nano
 fastfetch,~/.config/fastfetch
 hyprland,~/.config/hypr
+bat,~/.config/bat
+waybar,~/.config/waybar
