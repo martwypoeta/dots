@@ -19,4 +19,5 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # fastfetch
-fastfetch; echo
+fastfetch
+
