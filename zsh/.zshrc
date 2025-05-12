@@ -17,3 +17,6 @@ alias tree='tree -FC'
 
 alias ..='cd ..'
 alias ...='cd ../..'
+
+# fastfetch
+fastfetch; echo
