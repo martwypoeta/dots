@@ -3,46 +3,22 @@
   "logo": {
     "type": "file",
     "source": "~/.config/fastfetch/art/cat.txt",
-    "color": {
-      "1": "green"
-    },
+    "color": { "1": "green" },
     "position": "left",
-    "padding": {
-      "top": 1
-    }
+    "padding": { "top": 1 }
   },
   "display": {
     "separator": "",
-    "key": {
-      "width": 14
-    },
+    "key": { "width": 14 },
     "color": "bright_"
   },
   "modules": [
-    {
-      "key": "os",
-      "type": "os"
-    },
-    {
-      "key": "kernel",
-      "type": "kernel"
-    },
-    {
-      "key": "shell",
-      "type": "shell"
-    },
-    {
-      "key": "packages",
-      "type": "packages"
-    },
-    {
-      "type": "command",
-      "key": "os age",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); diff=$((current - birth_install)); echo $((diff/86400)) days | awk '{if($1>0) print $0; else print int(diff/3600)\" hours\"}' diff=\"$diff\""
-    },
-    {
-      "key": "uptime",
-      "type": "uptime"
-    }
+    { "key": "os", "type": "os" },
+    { "key": "kernel", "type": "kernel" },
+    { "key": "shell", "type": "shell" },
+    { "key": "packages", "type": "packages" },
+    // credit: https://github.com/harilvfs/fastfetch
+    { "type": "command", "key": "os age", "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days" },
+    { "key": "uptime", "type": "uptime" }
   ]
 }
