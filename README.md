@@ -28,12 +28,15 @@ chmod +x ./arch-link.sh
 Install all of the required dependencies with your favourite package manager.
 
 <details>
-<summary>Arch Linux (<code>pacman</code>)</summary>
+<summary>Arch Linux (<code>pacman, paru</code>)</summary>
 
 ```bash
 pacman -S --needed \
   hyprland git zsh kitty \
   nano bat tree
+
+paru -S --needed \
+  hyprshot
 ```
 
 </details>
