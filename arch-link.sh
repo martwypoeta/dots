@@ -32,8 +32,6 @@ while IFS= read -r line || [[ -n "$line" ]]; do
         continue
     fi
 
-    log "${CYAN}" "processing: $target -> ./$source"
-
     if [[ ! -e "$source" ]]; then
         log "${RED}" "source path does not exist: $source"
         continue
