@@ -28,12 +28,7 @@ chmod +x ./arch-link.sh
 Install all of the required dependencies with your favourite package manager.
 
 <details>
-
-<summary>
-
-Arch Linux (<code>pacman</code>)
-
-</summary>
+<summary>Arch Linux (<code>pacman</code>)</summary>
 
 ```bash
 pacman -S --needed \
