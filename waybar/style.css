@@ -38,6 +38,10 @@ button:hover {
   color: #282828;
 }
 
+#network {
+  padding-right: 12px;
+}
+
 #clock {
   padding: 0 16px;
   color: #1d2021;

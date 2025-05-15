@@ -5,7 +5,7 @@
   "spacing": 0,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["clock"],
+  "modules-right": ["network", "clock"],
   "hyprland/workspaces": {
     "persistent-workspaces": {
       "*": [1, 2, 3]
@@ -15,4 +15,9 @@
     "max-length": 80,
     "tooltip": false
   },
+  "network": {
+    "interval": 5,
+    "format": "󰛳  {bandwidthTotalBits}",
+    "format-disconnected": "󰲛 "
+  }
 }
