@@ -19,8 +19,8 @@ cd ~/.arch
 Make the linking script executable, and run it. This script will create symbolic links where needed. (You can find all in `symlinks.map` file)
 
 ```bash
-chmod +x ./arch-link.sh
-./arch-link.sh
+chmod +x _scripts/link.sh
+_scripts/link.sh
 ```
 
 ### Install Dependencies
