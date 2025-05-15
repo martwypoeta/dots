@@ -1,0 +1,46 @@
+[user]
+	email = szymonpel@proton.me
+	name = feenko
+	signingkey = 6DFACD877A147210
+
+[core]
+    compression = 9
+    whitespace = error
+    preloadindex = true
+
+[init]
+	defaultBranch = trunk
+
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all
+
+[diff]
+    context = 3
+    renames = copies
+    interHunkContext = 10
+
+[push]
+    autoSetupRemote = true
+    default = current
+
+[pull]
+    default = current
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgSign = true
+
+[url "https://github.com/"]
+    insteadOf = "gh:"
+
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
