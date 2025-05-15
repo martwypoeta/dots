@@ -1,7 +1,10 @@
-zsh/.zshrc,~/.zshrc
-kitty,~/.config/kitty
-nano,~/.config/nano
-fastfetch,~/.config/fastfetch
-hyprland,~/.config/hypr
-bat,~/.config/bat
-waybar,~/.config/waybar
+# format: <source> <target>
+
+zsh/.zshrc   ~/.zshrc
+
+bat          ~/.config/bat
+fastfetch    ~/.config/fastfetch
+git          ~/.config/git
+hyprland     ~/.config/hypr
+kitty        ~/.config/kitty
+waybar       ~/.config/waybar
