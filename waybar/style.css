@@ -1,6 +1,6 @@
 * {
   font-family: 'Iosevka Nerd Font';
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -39,7 +39,7 @@ button:hover {
 }
 
 #network {
-  padding-right: 12px;
+  padding-right: 16px;
 }
 
 #clock {
