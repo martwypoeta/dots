@@ -1,9 +1,8 @@
-# history settings
-setopt histignoredups
-setopt sharehistory
-setopt incappendhistory
+setopt HIST_IGNORE_DUPS
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
 
-HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
@@ -17,6 +16,11 @@ alias tree='tree -FC'
 
 alias ..='cd ..'
 alias ...='cd ../..'
+
+# keybinds
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+bindkey '^[[3;5~' kill-word
 
 # fastfetch
 fastfetch
