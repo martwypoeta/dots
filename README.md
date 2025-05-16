@@ -3,50 +3,45 @@
 My personal Arch Linux dotfiles.
 
 > [!NOTE]
-> Those dotfiles are made specifically for Arch Linux, but most of configuration files will probably work on other distros. With enough time and free will you can make it work on any distro you'd like.
+> These dotfiles are provided as-is, without any warranty. Use at your own risk. I am not responsible for any damage or data loss resulting from their use.
+
+## Overview
+
+Those dotfiles are made specifically for this environment:
+
+- OS: Arch Linux
+- Wayland compositor: [`Hyprland`](https://github.com/hyprwm/Hyprland)
+- Shell: [`zsh`](https://github.com/zsh-users/zsh)
+- Terminal emulator: [`kitty`](https://github.com/kovidgoyal/kitty)
 
 ## Installation
 
-### Clone Repo
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/martwypoeta/dots.git ~/.arch
 cd ~/.arch
 ```
 
-### Run Script
+### 2. Link Dotfiles
 
-Make the linking script executable, and run it. This script will create symbolic links where needed. (You can find all in `symlinks.map` file)
+This repo uses a linking script and a [`symlinks.map`](./symlinks.map) file to manage dotfile symlinks.
 
 ```bash
 chmod +x _scripts/link.sh
-_scripts/link.sh
+./_scripts/link.sh
 ```
 
-### Install Dependencies
+### 3. Install Dependencies (Arch-based systems)
 
-Install all of the required dependencies with your favourite package manager.
-
-<details>
-<summary>Arch Linux (<code>pacman, paru</code>)</summary>
+Use `pacman` for base packages:
 
 ```bash
-pacman -S --needed \
-  hyprland git zsh kitty \
-  nano bat tree
-
-paru -S --needed \
-  hyprshot
+pacman -S --needed hyprland git zsh kitty bat tree
 ```
 
-</details>
-
-### (Optional) Post-install
-
-#### zsh
-
-Change current user shell to zsh.
+Use `paru` for AUR packages:
 
 ```bash
-chsh -s $(which zsh)
+paru -S --needed hyprshot
 ```
