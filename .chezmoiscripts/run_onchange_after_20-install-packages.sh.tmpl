@@ -1,0 +1,6 @@
+#!/bin/bash
+# {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+
+set -euo pipefail
+
+paru -S --needed --noconfirm {{ .packages.pacman | join " " }} {{ .packages.paru | join " " }}

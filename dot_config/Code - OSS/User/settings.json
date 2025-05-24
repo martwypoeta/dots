@@ -1,0 +1,44 @@
+{
+  // Files
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // Editor
+  "editor.fontFamily": "Iosevka Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.tabSize": 2,
+
+  // Terminal
+  "terminal.integrated.fontSize": 16,
+
+  // Breadcrumbs
+  "breadcrumbs.enabled": false,
+
+  // Window
+  "window.zoomLevel": 0.8,
+
+  // Workbench UI
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.settings.editor": "json",
+
+  // Symbols
+  "symbols.hidesExplorerArrows": false,
+
+  // Security
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Telemetry
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off"
+}

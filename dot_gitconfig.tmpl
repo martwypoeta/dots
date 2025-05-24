@@ -1,0 +1,41 @@
+[user]
+  email = {{ .user.email }}
+  name = {{ .user.git.name }}
+  signingkey = {{ .user.git.signingKey }}
+
+[core]
+  compression = 9
+  whitespace = error
+  preloadindex = true
+
+[init]
+  defaultBranch = trunk
+
+[status]
+  branch = true
+  showStash = true
+  showUntrackedFiles = all
+
+[diff]
+  context = 3
+  renames = copies
+  interHunkContext = 10
+
+[push]
+  autoSetupRemote = true
+  default = current
+
+[pull]
+  default = current
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgSign = true
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
+
+[url "ssh://git@github.com/"]
+  insteadOf = "gh:"

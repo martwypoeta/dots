@@ -1,0 +1,35 @@
+packages:
+  pacman:
+  # Shell & Terminal
+  - zsh{,-autosuggestions,-syntax-highlighting}
+  - sudo
+  - kitty
+  - git
+  - reflector
+
+  # Hyprland
+  - hyprland
+  - hyprpaper
+  - xdg-desktop-portal-hyprland
+  - rofi-wayland
+  - waybar
+
+  # Audio (PipeWire stack)
+  - pipewire{,-alsa,-jack,-pulse}
+  - wireplumber
+  - rtkit
+
+  # Fonts
+  - noto-fonts{,-cjk,-emoji,-extra}
+  - ttf-iosevka-nerd
+
+  # Applications
+  - firefox
+  - code
+  - chezmoi
+  - openssh
+  - gnupg
+
+  paru:
+  # Hyprland (AUR)
+  - hyprshot

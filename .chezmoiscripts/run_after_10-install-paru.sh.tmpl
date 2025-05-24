@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -euo pipefail
+
+if ! command -v paru &>/dev/null; then
+  sudo pacman -S --needed --noconfirm git base-devel
+
+  tmp_dir=$(mktemp -d)
+  trap 'rm -rf "$tmp_dir"' EXIT
+
+  git clone https://aur.archlinux.org/paru.git "$tmp_dir"
+
+  pushd "$tmp_dir" > /dev/null || exit 1
+  makepkg -si --needed --noconfirm
+  popd > /dev/null
+fi

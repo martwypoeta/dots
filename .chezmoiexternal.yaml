@@ -1,0 +1,4 @@
+.zsh/git-prompt.zsh:
+  type: "git-repo"
+  url: "https://github.com/woefe/git-prompt.zsh.git"
+  refreshPeriod: "168h"

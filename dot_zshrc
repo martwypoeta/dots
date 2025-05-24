@@ -1,0 +1,59 @@
+# compinit
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-.]=** r:|=**'
+zstyle ':completion:*' max-errors 2 numeric
+zstyle ':completion:*' menu select=5
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle :compinstall filename '/home/feenko/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+# zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-syntax-highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Common Options
+setopt autocd
+
+# History
+HISTFILE=~/.zsh_history
+HISTIGNORE="ls:cd:pwd:exit:clear:shutdown:reboot"
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_VERIFY
+setopt APPEND_HISTORY
+
+# Keybinds
+bindkey "^[[3~" delete-char # DEL
+bindkey "^[[3;5~" delete-word # CTRL DEL
+bindkey "^H" backward-delete-word # CTRL BACKSPACE
+bindkey "^[[1;5C" forward-word # CTRL <-
+bindkey "^[[1;5D" backward-word # CTRL ->
+
+# Aliases
+alias fucking='sudo'
+
+alias ca='chezmoi apply'
+
+# Prompt
+source ~/.zsh/git-prompt.zsh/git-prompt.zsh
+
+ZSH_THEME_GIT_PROMPT_PREFIX=""
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_SEPARATOR=" "
+ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg[yellow]%}"
+ZSH_GIT_PROMPT_SHOW_UPSTREAM="full"
+
+PROMPT='%F{blue}[%F{green}%n %f%F{cyan}%(4~|../|)%3~%F{blue}]%f '
+RPROMPT='$(gitprompt)'

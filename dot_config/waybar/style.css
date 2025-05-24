@@ -1,0 +1,48 @@
+* {
+  font-family: 'Iosevka Nerd Font';
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#waybar {
+  color: #ebdbb2;
+  background: #1d2021;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+}
+
+/* Remove default hover styling – see:
+   https://github.com/Alexays/Waybar/issues/60#issuecomment-1604253114 */
+button:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
+  transition: none;
+}
+
+#workspaces button {
+  padding: 0 7px;
+  color: #ebdbb2;
+  background: transparent;
+}
+
+#workspaces button.active {
+  background: #ebdbb2;
+  color: #282828;
+}
+
+#workspaces button.urgent {
+  background: #fb4934;
+  color: #282828;
+}
+
+#network,
+#temperature,
+#memory,
+#wireplumber,
+#clock {
+  padding-right: 12px;
+}

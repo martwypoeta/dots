@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "dot_gitconfig.tmpl": "properties",
+    "dot_zlogin": "shellscript",
+    "dot_zshrc": "shellscript",
+    "*.sh.tmpl": "shellscript",
+    "*.rasi": "properties"
+  },
+  "files.exclude": {
+    "**/Repos": true
+  },
+  "editor.tabSize": 2
+}

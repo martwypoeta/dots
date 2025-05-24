@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -euo pipefail
+
+CONFIG="/etc/pacman.conf"
+
+if ! grep -q "^Color" "$CONFIG"; then
+  sed -i "/^#Color/s/^#Color/Color\nILoveCandy/" "$CONFIG"
+elif ! grep -q "^ILoveCandy" "$CONFIG"; then
+  sed -i "/^Color/a ILoveCandy" "$CONFIG"
+fi
+
+if ! grep -q "^VerbosePkgLists" "$CONFIG"; then
+  sed -i "/^#VerbosePkgLists/s/^#VerbosePkgLists/VerbosePkgLists/" "$CONFIG"
+fi
