@@ -22,7 +22,7 @@ My personal Arch Linux dotfiles, now managed with [chezmoi](https://chezmoi.io/)
 ### Misc
 
 - [PipeWire](https://github.com/PipeWire) audio stack.
-- Unnecesary rofi entries hidden.
+- Unnecessary rofi entries hidden.
 
 ### Fonts
 
