@@ -6,7 +6,7 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 zstyle ':completion:*' max-errors 2 numeric
 zstyle ':completion:*' menu select=5
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle :compinstall filename '/home/feenko/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -21,7 +21,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 setopt autocd
 
 # History
-HISTFILE=~/.zsh_history
+HISTFILE=~/.zsh/.zsh_history
 HISTIGNORE="ls:cd:pwd:exit:clear:shutdown:reboot"
 HISTSIZE=100000
 SAVEHIST=100000
@@ -42,9 +42,10 @@ bindkey "^[[1;5C" forward-word # CTRL <-
 bindkey "^[[1;5D" backward-word # CTRL ->
 
 # Aliases
-alias fucking='sudo'
-
 alias ca='chezmoi apply'
+
+alias cat='bat'
+alias ls='eza'
 
 # Prompt
 source ~/.zsh/git-prompt.zsh/git-prompt.zsh

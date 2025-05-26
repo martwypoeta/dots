@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -euo pipefail
+
+NTP_SERVERS="time1.meinberg.de time2.meinberg.de time3.meinberg.de time4.meinberg.de"
+FALLBACK_SERVERS="0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org"
+CONFIG="/etc/systemd/timesyncd.conf"
+
+sudo timedatectl set-ntp true
+sudo hwclock --systohc
+
+if grep -qE "^NTP=|^#NTP=" "$CONFIG"; then
+  current_ntp=$(grep -E "^NTP=|^#NTP=" "$CONFIG" | head -n1 | sed -E "s/^#?NTP=(.*)/\1/")
+  if [ "$current_ntp" != "$NTP_SERVERS" ]; then
+    sudo sed -i "s|^#\?NTP=.*|NTP=$NTP_SERVERS|" "$CONFIG"
+  fi
+else
+  echo "NTP=$NTP_SERVERS" | sudo tee -a "$CONFIG" > /dev/null
+fi
+
+if grep -qE "^FallbackNTP=|^#FallbackNTP=" "$CONFIG"; then
+  current_fallback=$(grep -E "^FallbackNTP=|^#FallbackNTP=" "$CONFIG" | head -n1 | sed -E "s/^#?FallbackNTP=(.*)/\1/")
+  if [ "$current_fallback" != "$FALLBACK_SERVERS" ]; then
+    sudo sed -i "s|^#\?FallbackNTP=.*|FallbackNTP=$FALLBACK_SERVERS|" "$CONFIG"
+  fi
+else
+  echo "FallbackNTP=$FALLBACK_SERVERS" | sudo tee -a "$CONFIG" > /dev/null
+fi

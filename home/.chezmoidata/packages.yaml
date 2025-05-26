@@ -1,36 +1,34 @@
 # cSpell:disable
 packages:
-  pacman:
-  # Shell & Terminal
-  - zsh{,-autosuggestions,-syntax-highlighting}
-  - sudo
-  - kitty
-  - git
-  - reflector
+  arch:
+    base:
+      - bat
+      - chezmoi
+      - eza
+      - git
+      - gnupg
+      - openssh
+      - zsh
+      - zsh-autosuggestions
+      - zsh-syntax-highlighting
 
-  # Hyprland
-  - hyprland
-  - hyprpaper
-  - xdg-desktop-portal-hyprland
-  - rofi-wayland
-  - waybar
-
-  # Audio (PipeWire stack)
-  - pipewire{,-alsa,-jack,-pulse}
-  - wireplumber
-  - rtkit
-
-  # Fonts
-  - noto-fonts{,-cjk,-emoji,-extra}
-  - ttf-iosevka-nerd
-
-  # Applications
-  - firefox
-  - code
-  - chezmoi
-  - openssh
-  - gnupg
-
-  paru:
-  # Hyprland (AUR)
-  - hyprshot
+    desktop:
+      - code
+      - dunst
+      - firefox
+      - hyprland
+      - hyprpaper
+      - hyprshot
+      - kitty
+      - noto-fonts
+      - noto-fonts-cjk
+      - noto-fonts-emoji
+      - noto-fonts-extra
+      - pipewire
+      - pipewire-alsa
+      - pipewire-jack
+      - pipewire-pulse
+      - rofi-wayland
+      - rtkit
+      - waybar
+      - xdg-desktop-portal-hyprland

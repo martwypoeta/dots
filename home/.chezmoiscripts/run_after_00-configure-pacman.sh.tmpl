@@ -4,12 +4,25 @@ set -euo pipefail
 
 CONFIG="/etc/pacman.conf"
 
+# Enable "Color" and "ILoveCandy"
 if ! grep -q "^Color" "$CONFIG"; then
-  sed -i "/^#Color/s/^#Color/Color\nILoveCandy/" "$CONFIG"
+  if grep -q "^#Color" "$CONFIG"; then
+    sudo sed -i "/^#Color/s/^#//" "$CONFIG"
+    if ! grep -q "^ILoveCandy" "$CONFIG"; then
+      sudo sed -i "/^Color/a ILoveCandy" "$CONFIG"
+    fi
+  else
+    echo -e "Color\nILoveCandy" | sudo tee -a "$CONFIG" > /dev/null
+  fi
 elif ! grep -q "^ILoveCandy" "$CONFIG"; then
-  sed -i "/^Color/a ILoveCandy" "$CONFIG"
+  sudo sed -i "/^Color/a ILoveCandy" "$CONFIG"
 fi
 
+# Enable "VerbosePkgLists"
 if ! grep -q "^VerbosePkgLists" "$CONFIG"; then
-  sed -i "/^#VerbosePkgLists/s/^#VerbosePkgLists/VerbosePkgLists/" "$CONFIG"
+  if grep -q "^#VerbosePkgLists" "$CONFIG"; then
+    sudo sed -i "/^#VerbosePkgLists/s/^#//" "$CONFIG"
+  else
+    echo "VerbosePkgLists" | sudo tee -a "$CONFIG" > /dev/null
+  fi
 fi

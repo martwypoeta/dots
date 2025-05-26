@@ -1,0 +1,17 @@
+# XDG Base Directory
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+# Dotfile madness
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+
+# Applications
+export BROWSER="firefox"
+export EDITOR="code --wait"
+
+# Bun
+[ -s "$XDG_DATA_HOME/bun" ] && source "$XDG_DATA_HOME/bun/_bun"
+export BUN_INSTALL="$XDG_DATA_HOME/bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

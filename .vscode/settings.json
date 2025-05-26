@@ -1,7 +1,9 @@
 {
   "files.associations": {
-    "dot_gitconfig.tmpl": "properties",
+    "**/git/config.tmpl": "properties",
     "dot_zlogin": "shellscript",
+    "dot_zprofile": "shellscript",
+    "dot_zshenv": "shellscript",
     "dot_zshrc": "shellscript",
     "*.sh.tmpl": "shellscript",
     "*.rasi": "properties"
@@ -13,6 +15,7 @@
   "cSpell.words": [
     "chezmoi",
     "chezmoidata",
+    "Gruvbox",
     "Hyprland",
     "Iosevka",
     "makepkg",
