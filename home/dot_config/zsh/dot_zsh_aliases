@@ -1,2 +1,4 @@
 alias fuck='sudo !!'
 alias please='sudo !!'
+
+alias mkdir='mkdir -p'

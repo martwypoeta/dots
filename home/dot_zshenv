@@ -1,2 +1,2 @@
-ZDOTDIR="/home/feenko/.config/zsh"
-. $ZDOTDIR/.zshenv
+export ZDOTDIR="/home/feenko/.config/zsh"
+source "$ZDOTDIR/.zshenv"

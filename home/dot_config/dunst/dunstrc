@@ -1,7 +1,9 @@
 [global]
   width = 450
   height = (0, 300)
-  offset = (15, 47)
+  offset = (0, 47)
+
+  origin = top-center
 
   padding = 14
   horizontal_padding = 14
@@ -12,7 +14,6 @@
   gap_size = 8
 
   font = Iosevka Nerd Font 12
-  markup = full
   format = "<span font='Iosevka Nerd Font Semibold'>%s</span>\n%b"
 
   min_icon_size = 24

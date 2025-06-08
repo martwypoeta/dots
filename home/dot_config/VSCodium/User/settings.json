@@ -1,0 +1,52 @@
+{
+  // color theme
+  "workbench.colorTheme": "Kanagawa Dragon",
+  "workbench.colorCustomizations": {
+    "[Kanagawa Dragon]": {
+      "titleBar.activeBackground": "#181616",
+      "activityBar.background": "#181616",
+      "tab.inactiveBackground": "#181616",
+      "tab.border": "#181616",
+      "tab.hoverBackground": "#181616",
+      "editorGroupHeader.tabsBackground": "#181616",
+      "gitDecoration.addedResourceForeground": "#81b88b",
+      "gitDecoration.untrackedResourceForeground": "#81b88b",
+      "scrollbar.shadow": "#ff000000",
+    }
+  },
+
+  // icon theme
+  "workbench.iconTheme": "bearded-icons",
+
+  // window
+  "window.zoomLevel": 1.2,
+  "window.menuBarVisibility": "compact",
+
+  // font
+  "editor.fontFamily": "Iosevka Nerd Font",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 15,
+
+  // ui
+  "editor.cursorStyle": "block",
+  "workbench.sideBar.location": "right",
+
+  // files
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.formatOnSave": true,
+
+  // declutter
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "workbench.startupEditor": "none",
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.showTabs": "none",
+  "explorer.confirmDelete": false,
+}

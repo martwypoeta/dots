@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 # reload.sh
 #
@@ -14,7 +14,7 @@
 
 set -euo pipefail
 
-chezmoi apply --exclude=encrypted
+chezmoi apply --force --exclude=encrypted
 sleep 0.5 # some chezmoi changes take little bit more time
 
 processes=(dunst sxhkd)

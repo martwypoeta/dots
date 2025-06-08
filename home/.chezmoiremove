@@ -1,0 +1,10 @@
+# lowercase downloads is preferred yet librewolf sometimes creates it out of thin fucking air
+Downloads
+
+.bashrc
+.bash_profile
+.bash_logout
+.bash_history
+.profile
+
+.local/share/Trash

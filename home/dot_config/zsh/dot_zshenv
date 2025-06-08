@@ -23,6 +23,8 @@ export EDITOR="nvim"
 export VISUAL="$EDITOR"
 export BROWSER="librewolf"
 export TERMINAL="alacritty"
+export PAGER=
+export GTK_THEME="Adwaita:dark"
 
 # home declutter
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 # vcs.sh
 #
@@ -12,7 +12,7 @@
 
 set -euo pipefail
 
-cd ~/projects/dotfiles
+pushd ~/projects/dotfiles > /dev/null
 [ -d .git ] || { notify-send "vcs.sh" "Not a Git repository"; exit 1; }
 
 git add --all
@@ -32,3 +32,5 @@ if git rev-parse --is-inside-work-tree &>/dev/null && git remote show origin &>/
 else
   notify-send "vcs.sh" "No commits or remote found. Skipping commit."
 fi
+
+popd > /dev/null

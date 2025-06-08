@@ -3,5 +3,9 @@ import = [
   "~/.config/alacritty/themes/kanagawa-dragon.toml",
 ]
 
+[font]
+normal = { family = "Iosevka Nerd Font" }
+size = 12.5
+
 [window]
 padding = { x = 12, y = 12 }
