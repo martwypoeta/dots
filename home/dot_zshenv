@@ -1,0 +1,2 @@
+ZDOTDIR="/home/feenko/.config/zsh"
+. $ZDOTDIR/.zshenv

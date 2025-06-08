@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "files.associations": {
+    "dot_xinitrc": "shellscript",
+    "dot_zshenv": "shellscript",
+    "dot_zshrc": "shellscript",
+    "dot_zsh_aliases": "shellscript",
+    "executable_bspwmrc": "shellscript",
+    "sxhkdrc": "properties",
+    "**/git/config": "properties",
+  }
+}

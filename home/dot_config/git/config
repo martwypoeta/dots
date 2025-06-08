@@ -1,0 +1,45 @@
+[user]
+	name = Szymon Pel
+	email = szymonpel@proton.me
+	signingkey = 6DFACD877A147210
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[core]
+	compression = 9
+	whitespace = error
+	preloadindex = true
+	autocrlf = input
+
+[init]
+	defaultBranch = trunk
+
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+
+[push]
+	autoSetupRemote = true
+	default = current
+
+[pull]
+	rebase = true
+
+[merge]
+	ff = only
+
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
+[url "ssh://git@github.com/"]
+	insteadOf = "gh:"

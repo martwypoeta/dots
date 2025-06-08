@@ -1,0 +1,14 @@
+directory: ~/music
+library: ~/.local/state/library.db
+
+import:
+  move: yes
+  copy: no
+  write: yes
+  resume: yes
+  incremental: yes
+
+plugins: fetchart lastgenre info missing duplicates
+
+paths:
+  default: $albumartist/$album/$track. $title

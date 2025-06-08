@@ -1,0 +1,33 @@
+# aliases
+[[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
+
+# plugins
+[[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]] \
+  && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] \
+  && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zmodload zsh/complist
+
+# switches
+setopt autocd prompt_subst extended_history hist_expire_dups_first hist_find_no_dups \
+       hist_ignore_all_dups hist_ignore_dups hist_ignore_space hist_save_no_dups share_history
+
+# history
+HISTFILE=$ZDOTDIR/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+# prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats ' %F{yellow}(%b)'
+
+PROMPT='%F{cyan}%n@%m%f:%F{green}%~${vcs_info_msg_0_} %f%# '

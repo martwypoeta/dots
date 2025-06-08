@@ -1,0 +1,38 @@
+[global]
+  width = 450
+  height = (0, 300)
+  offset = (15, 47)
+
+  padding = 14
+  horizontal_padding = 14
+
+  frame_width = 1
+  frame_color = "#404540"
+
+  gap_size = 8
+
+  font = Iosevka Nerd Font 12
+  markup = full
+  format = "<span font='Iosevka Nerd Font Semibold'>%s</span>\n%b"
+
+  min_icon_size = 24
+  max_icon_size = 24
+
+[urgency_low]
+  background = "#181616"
+  foreground = "#C5C9C5"
+  timeout = 10
+
+[urgency_normal]
+  background = "#181616"
+  foreground = "#C5C9C5"
+  timeout = 10
+  override_pause_level = 30
+
+[urgency_critical]
+  background = "#181616"
+  foreground = "#C5C9C5"
+  frame_color = "#A292A3"
+  timeout = 0
+  override_pause_level = 60
+  default_icon = dialog-warning

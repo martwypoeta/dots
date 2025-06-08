@@ -1,0 +1,7 @@
+[general]
+import = [
+  "~/.config/alacritty/themes/kanagawa-dragon.toml",
+]
+
+[window]
+padding = { x = 12, y = 12 }
