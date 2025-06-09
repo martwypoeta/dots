@@ -1,6 +1,6 @@
 # switch workspaces & move windows
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}' {_,--follow}
+	bspc {desktop -f,node -d} '^{1-9,10}'
 
 # focus using arrow keys
 super + Left
@@ -19,26 +19,21 @@ super + Right
 super + BackSpace
 	~/scripts/reload.sh
 
-# applications
+# scripts
 super + slash
 	~/scripts/cheatsheet.sh
 
+# applications
 super + q
 	alacritty
 
-super + e
-	thunar
-
-super + f
+super + w
 	librewolf
 
-super + d
+super + e
 	codium
 
-super + v
-	vesktop
-
-super + r
+super + a
 	deadbeef
 
 # kill window
@@ -48,7 +43,3 @@ super + c
 # kill wm
 super + m
 	bspc quit
-
-# screenshotting
-Print
-	maim -s | xclip -selection clipboard -t image/png

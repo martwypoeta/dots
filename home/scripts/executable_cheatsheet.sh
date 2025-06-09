@@ -13,10 +13,9 @@ icon=""
 
 keybinds=(
   "Q" "terminal"
-  "F" "browser"
-  "D" "code"
-  "V" "discord"
-  "R" "deadbeef"
+  "W" "browser"
+  "E" "code"
+  "A" "deadbeef"
 )
 
 min_gap=22
@@ -52,4 +51,4 @@ for ((i = 0; i < ${#keybinds[@]}; i += 2)); do
   fi
 done
 
-notify-send "cheatsheet.sh" "$msg" --hint=int:transient:1
+notify-send "Keybinds" "$msg" --hint=int:transient:1

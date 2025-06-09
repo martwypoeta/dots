@@ -1,6 +1,6 @@
 {
   // color theme
-  "workbench.colorTheme": "Kanagawa Dragon",
+  "workbench.colorTheme": "Kanagawa Wave",
   "workbench.colorCustomizations": {
     "[Kanagawa Dragon]": {
       "titleBar.activeBackground": "#181616",
@@ -11,6 +11,19 @@
       "editorGroupHeader.tabsBackground": "#181616",
       "gitDecoration.addedResourceForeground": "#81b88b",
       "gitDecoration.untrackedResourceForeground": "#81b88b",
+      "gitDecoration.renamedResourceForeground": "#81b88b",
+      "scrollbar.shadow": "#ff000000",
+    },
+    "[Kanagawa Wave]": {
+      "titleBar.activeBackground": "#1f1f28",
+      "activityBar.background": "#1f1f28",
+      "tab.inactiveBackground": "#1f1f28",
+      "tab.border": "#1f1f28",
+      "tab.hoverBackground": "#1f1f28",
+      "editorGroupHeader.tabsBackground": "#1f1f28",
+      "gitDecoration.addedResourceForeground": "#98bb6c",
+      "gitDecoration.untrackedResourceForeground": "#98bb6c",
+      "gitDecoration.renamedResourceForeground": "#98bb6c",
       "scrollbar.shadow": "#ff000000",
     }
   },
@@ -37,6 +50,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "editor.formatOnSave": true,
+  "explorer.compactFolders": false,
 
   // declutter
   "window.commandCenter": false,
@@ -47,6 +61,5 @@
   "workbench.startupEditor": "none",
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.editor.showTabs": "none",
   "explorer.confirmDelete": false,
 }

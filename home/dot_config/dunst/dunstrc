@@ -1,7 +1,7 @@
 [global]
   width = 450
   height = (0, 300)
-  offset = (0, 47)
+  offset = (0, 56)
 
   origin = top-center
 
@@ -20,20 +20,20 @@
   max_icon_size = 24
 
 [urgency_low]
-  background = "#181616"
-  foreground = "#C5C9C5"
+  background = "#1f1f28"
+  foreground = "#dcd7ba"
   timeout = 10
 
 [urgency_normal]
-  background = "#181616"
-  foreground = "#C5C9C5"
+  background = "#1f1f28"
+  foreground = "#dcd7ba"
   timeout = 10
   override_pause_level = 30
 
 [urgency_critical]
-  background = "#181616"
-  foreground = "#C5C9C5"
-  frame_color = "#A292A3"
+  background = "#1f1f28"
+  foreground = "#dcd7ba"
+  frame_color = "#c34043"
   timeout = 0
   override_pause_level = 60
   default_icon = dialog-warning

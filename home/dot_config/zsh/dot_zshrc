@@ -1,3 +1,18 @@
+# prompt
+clear() { printf '\n%.0s' {1..100} }
+
+zle_clear() { printf '\n%.0s' {1..100}; zle reset-prompt }
+zle -N zle_clear
+bindkey '^L' zle_clear # make the ctrl+l clear screen properly
+
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats ' %F{yellow}(%b)'
+
+PROMPT='%F{cyan}%n@%m%f:%F{green}%~${vcs_info_msg_0_} %f%# '
+
 # aliases
 [[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 
@@ -20,12 +35,3 @@ setopt autocd prompt_subst extended_history hist_expire_dups_first hist_find_no_
 HISTFILE=$ZDOTDIR/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
-
-# prompt
-autoload -Uz vcs_info
-precmd() { vcs_info }
-
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' formats ' %F{yellow}(%b)'
-
-PROMPT='%F{cyan}%n@%m%f:%F{green}%~${vcs_info_msg_0_} %f%# '

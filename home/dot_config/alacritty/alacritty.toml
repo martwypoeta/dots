@@ -1,6 +1,6 @@
 [general]
 import = [
-  "~/.config/alacritty/themes/kanagawa-dragon.toml",
+  "~/.config/alacritty/themes/kanagawa-wave.toml",
 ]
 
 [font]
@@ -8,4 +8,11 @@ normal = { family = "Iosevka Nerd Font" }
 size = 12.5
 
 [window]
+opacity = 0.95
 padding = { x = 12, y = 12 }
+
+[terminal]
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+args = ["-c", "printf '\\n%.0s' {1..100}; exec zsh"]

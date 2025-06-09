@@ -25,12 +25,12 @@ if git rev-parse --is-inside-work-tree &>/dev/null && git remote show origin &>/
     git commit -m "configuration sync [auto]" -m "This is a automated commit made to keep repo in sync with local changes."
     git push origin $(git rev-parse --abbrev-ref HEAD)
 
-    notify-send "vcs.sh" "Successfully committed and pushed changes."
+    notify-send "Chezmoi" "Successfully committed and pushed changes."
   else
-    notify-send "vcs.sh" "No new changes to commit (last commit was less than 24 hours ago)."
+    notify-send "Chezmoi" "No new changes to commit (last commit was less than 24 hours ago)."
   fi
 else
-  notify-send "vcs.sh" "No commits or remote found. Skipping commit."
+  notify-send "Chezmoi" "No commits or remote found. Skipping commit."
 fi
 
 popd > /dev/null

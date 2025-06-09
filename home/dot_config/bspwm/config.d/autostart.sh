@@ -9,7 +9,7 @@ autostart() {
   fi
 }
 
-autostart "picom --config ~/.config/picom.conf"
+autostart "picom --config ~/.config/picom/picom.conf"
 autostart "polybar"
 autostart "sxhkd"
 autostart "dunst"

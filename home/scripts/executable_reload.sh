@@ -28,6 +28,6 @@ done
 
 bspc wm --restart
 
-notify-send "reload.sh" "Successfully reloaded system configuration."
+notify-send "Reload" "Successfully reloaded system configuration."
 
 ~/scripts/vcs.sh

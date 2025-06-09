@@ -1,6 +1,6 @@
 #!/bin/sh
 
-CONFIG_DIR="$HOME/.config/bspwm/config"
+CONFIG_DIR="$HOME/.config/bspwm/config.d"
 
 source "$CONFIG_DIR/autostart.sh"
 source "$CONFIG_DIR/appearance.sh"
