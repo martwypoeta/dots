@@ -1,4 +1,7 @@
-alias fuck='sudo !!'
-alias please='sudo !!'
-
 alias mkdir='mkdir -p'
+
+alias ls='eza --no-quotes --git --icons'
+alias la='eza -al --total-size --no-permissions --no-user --no-time --no-quotes  --git --icons'
+
+alias code='codium'
+alias c='codium'

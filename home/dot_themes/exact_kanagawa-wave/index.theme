@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=kanagawa-wave
+Encoding=UTF-811
+
+[X-GNOME-Metatheme]
+Name=kanagawa-wave
+GtkTheme=kanagawa-wave
+IconTheme=kanagawa-wave
+MetacityTheme=kanagawa-wave

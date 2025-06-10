@@ -36,6 +36,10 @@ super + e
 super + a
 	deadbeef
 
+# screenshots
+Print
+	maim -s | xclip -selection clipboard -t image/png && notify-send "Maim" "Screenshot copied to clipboard"
+
 # kill window
 super + c
 	bspc node -c

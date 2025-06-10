@@ -10,3 +10,5 @@ Downloads
 .local/share/Trash
 
 .xinitrc
+
+.config/picom.conf

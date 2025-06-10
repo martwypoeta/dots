@@ -15,18 +15,16 @@ export XDG_PUBLICSHARE_DIR="$HOME/public"
 export XDG_TEMPLATES_DIR="$HOME/templates"
 export XDG_VIDEOS_DIR="$HOME/videos"
 
-# xauthority
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
-
 # applications
-export EDITOR="nvim"
+export EDITOR="codium --wait"
 export VISUAL="$EDITOR"
 export BROWSER="librewolf"
 export TERMINAL="alacritty"
 export PAGER="less"
-export GTK_THEME="Adwaita:dark"
+export GTK_THEME="kanagawa-wave"
 
 # home declutter
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"

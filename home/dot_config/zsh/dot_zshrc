@@ -14,7 +14,7 @@ zstyle ':vcs_info:git:*' formats ' %F{yellow}(%b)'
 PROMPT='%F{cyan}%n@%m%f:%F{green}%~${vcs_info_msg_0_} %f%# '
 
 # aliases
-[[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
+[[ -f "$XDG_CONFIG_HOME/zsh/.zsh_aliases" ]] && source "$XDG_CONFIG_HOME/zsh/.zsh_aliases"
 
 # plugins
 source ~/.local/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

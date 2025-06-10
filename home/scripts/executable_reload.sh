@@ -17,7 +17,7 @@ set -euo pipefail
 chezmoi apply --force --exclude=encrypted
 sleep 0.5 # some chezmoi changes take little bit more time
 
-processes=(dunst sxhkd)
+processes=(dunst sxhkd picom)
 for proc in "${processes[@]}"; do
   if pgrep -x "$proc" > /dev/null; then
     killall "$proc"
