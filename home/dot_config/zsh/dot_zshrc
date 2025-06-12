@@ -1,10 +1,4 @@
 # prompt
-clear() { printf '\n%.0s' {1..100} }
-
-zle_clear() { printf '\n%.0s' {1..100}; zle reset-prompt }
-zle -N zle_clear
-bindkey '^L' zle_clear # make the ctrl+l clear screen properly
-
 autoload -Uz vcs_info
 precmd() { vcs_info }
 

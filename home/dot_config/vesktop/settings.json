@@ -1,0 +1,6 @@
+{
+  "discordBranch": "stable",
+  "minimizeToTray": false,
+  "arRPC": true,
+  "staticTitle": true
+}

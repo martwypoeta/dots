@@ -1,4 +1,10 @@
 #!/bin/sh
 
-setxkbmap -layout pl
+setxkbmap -layout pl # keyboard layout
+
+xset m 1 0 # disable mouse accel
+xset s off # disable screensaver
+xset s noblank
+xset dpms 600 1800 5400 # set dpms values; 10 minutes - standby; 30 minutes - suspend; 1 hour 30 minutes - off
+
 exec bspwm

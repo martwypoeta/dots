@@ -3,27 +3,25 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 # focus using arrow keys
-super + Left
-	bspc node -f west
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
 
-super + Down
-	bspc node -f south
+# kill window
+super + c
+	bspc node -c
 
-super + Up
-	bspc node -f north
-
-super + Right
-	bspc node -f east
+# kill wm
+super + m
+	bspc quit
 
 # reload wm
 super + BackSpace
 	~/scripts/reload.sh
 
-# scripts
+# applications
 super + slash
 	~/scripts/cheatsheet.sh
 
-# applications
 super + q
 	alacritty
 
@@ -36,14 +34,19 @@ super + e
 super + a
 	deadbeef
 
+super + d
+	vesktop
+
 # screenshots
 Print
 	maim -s | xclip -selection clipboard -t image/png && notify-send "Maim" "Screenshot copied to clipboard"
 
-# kill window
-super + c
-	bspc node -c
+shift + Print
+	maim -s ~/pictures/screenshots/$(date +%s).png && notify-send "Maim" "Screenshot saved to gallery"
 
-# kill wm
-super + m
-	bspc quit
+# media
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+{XF86AudioPrev, XF86AudioNext, XF86AudioPlay, XF86AudioStop}
+    playerctl {previous,next,play-pause,stop}
