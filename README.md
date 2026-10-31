@@ -49,7 +49,7 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 
 - Theme: [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
 - Icons: [Catppuccin Icons](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
-- Font: Input Mono
+- Font: Input Mono (see [Font license](#font-license))
 
 <details>
 <summary>all extensions (click)</summary>
@@ -68,15 +68,14 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 
 | app | what it's for | via |
 | :-- | :-- | :-: |
-| **Zen** ([config](modules/home/zen.nix)) | Web browser with uBlock Origin and iCloud Passwords | cask |
-| **Antigravity** ([config](modules/home/antigravity)) | Agentic code editor from Google | cask |
+| **Ghostty** ([config](modules/home/ghostty.nix)) | Terminal emulator | cask |
+| **VS Code** ([config](modules/home/vscode)) | Code editor | cask |
+| **Zen** ([config](modules/home/zen.nix)) | Web browser with iCloud Passwords | cask |
 | **Claude** | Desktop client for Claude | cask |
 | **OpenUsage** ([config](modules/home/openusage)) | AI usage limits in the menu bar | cask |
 | **Vesktop** ([config](modules/home/vesktop)) | Discord client based on Vencord | cask |
 | **Spotify** | Music streaming | cask |
-| **Roblox** and **Roblox Studio** | Game client and game development environment | cask |
 | **Termius** | SSH client | App Store |
-| **uBlock Origin Lite** | Content blocker for Safari | App Store |
 | **gh** | GitHub command line interface | brew |
 | **mole** | System cleanup utility | brew |
 | **pinentry-mac** | Passphrase prompt for GPG | brew |
@@ -103,6 +102,14 @@ Setting up a fresh mac is four steps, see [INSTALL.md](INSTALL.md).
 
 > [!WARNING]
 > Homebrew cleanup is set to `zap`: a rebuild uninstalls anything not listed in `homebrew.nix`, app data included. Never `brew install` by hand.
+
+## License
+
+The config is [MIT](LICENSE), except for the font below.
+
+### Font license
+
+[`InputMono-Regular.ttf`](modules/darwin/fonts/InputMono-Regular.ttf) is [Input](https://input.djr.com/) by David Jonathan Ross and The Font Bureau. I downloaded it from their website for personal use. It is **not** covered by the MIT license and it is not free for commercial use. If you want to use it, get your own copy and read their [license](https://input.djr.com/license) first.
 
 ## Disclaimer
 
