@@ -46,6 +46,7 @@
 
     masApps = {
       Termius = 1176074088;
+      Xcode = 497799835;
       "uBlock Origin Lite" = 6745342698;
     };
 
@@ -66,4 +67,13 @@
       "vue.volar"
     ];
   };
+
+  # runs after homebrew, so a fresh Xcode from the App Store is picked up in the same switch
+  system.activationScripts.postActivation.text = ''
+    xcode=/Applications/Xcode.app/Contents/Developer
+    if [ -d "$xcode" ] && [ "$(xcode-select -p)" != "$xcode" ]; then
+      echo >&2 "selecting Xcode..."
+      xcode-select -s "$xcode"
+    fi
+  '';
 }
