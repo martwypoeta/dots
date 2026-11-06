@@ -9,6 +9,5 @@
     "pl-PL"
   ],
   "hardwareVideoAcceleration": true,
-  "enableSplashScreen": false,
-  "nativeTitleBar": true
+  "enableSplashScreen": false
 }
