@@ -30,7 +30,6 @@
     casks = [
       "claude"
       "ghostty"
-      "openusage"
       "roblox"
       "robloxstudio"
       "spotify"

@@ -5,7 +5,6 @@
     ./git.nix
     ./gpg
     ./merge-json.nix
-    ./openusage
     ./shell.nix
     ./vesktop
     ./vscode

@@ -15,7 +15,6 @@
       tilesize = 64;
       magnification = false;
       show-recents = false;
-      # Finder and Trash are always there
       persistent-apps = [
         "/System/Cryptexes/App/System/Applications/Safari.app"
         "/Applications/Vesktop.app"
@@ -59,7 +58,6 @@
       NSGlobalDomain = {
         # orange
         AppleAccentColor = 1;
-        AppleActionOnDoubleClick = "None";
       };
 
       "com.apple.finder".ShowRecentTags = false;
