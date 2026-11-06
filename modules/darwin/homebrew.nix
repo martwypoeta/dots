@@ -28,7 +28,6 @@
     };
 
     casks = [
-      "antigravity"
       "claude"
       "ghostty"
       "openusage"

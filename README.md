@@ -1,19 +1,6 @@
 # My dotfiles
 
-<details>
-<summary>don't read!</summary>
-<br>
-✓ one command and the whole mac is back
-<br>
-✓ declarative, nothing installed by hand
-<br>
-✓ boring on purpose
-</details>
-<br>
-
-**OS:** macOS (Apple Silicon), managed with [nix-darwin](https://github.com/nix-darwin/nix-darwin) and [home-manager](https://github.com/nix-community/home-manager)
-
-**Nix:** the official one with flakes, not Determinate
+**OS:** macOS 27, managed with [nix-darwin](https://github.com/nix-darwin/nix-darwin) and [home-manager](https://github.com/nix-community/home-manager)
 
 **Editor:** [VS Code](#editor)
 
@@ -30,7 +17,7 @@
   - [`homebrew.nix`](modules/darwin/homebrew.nix): casks, brews, App Store apps, VS Code extensions
 - [`modules/home`](modules/home): the user side, one module per app. Apps with their own config files get a directory, with the files next to its `default.nix`
 
-GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew is handled by [nix-homebrew](https://github.com/zhaofengli/nix-homebrew) with the taps pinned in `flake.lock`, so apps only move when the flake does.
+GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew is handled by [nix-homebrew](https://github.com/zhaofengli/nix-homebrew) with the taps pinned in `flake.lock`.
 
 ## Terminal
 
@@ -45,7 +32,7 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 
 ## Editor
 
-[VS Code](https://code.visualstudio.com/) ([config](modules/home/vscode)). Settings are linked from the repo, extensions come from the Marketplace through Homebrew.
+[VS Code](https://code.visualstudio.com/) ([config](modules/home/vscode)). Settings are linked from the repo.
 
 - Theme: [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
 - Icons: [Catppuccin Icons](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
@@ -63,24 +50,6 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 - Open in GitHub, two flavours
 
 </details>
-
-## Apps
-
-| app | what it's for | via |
-| :-- | :-- | :-: |
-| **Ghostty** ([config](modules/home/ghostty.nix)) | Terminal emulator | cask |
-| **VS Code** ([config](modules/home/vscode)) | Code editor | cask |
-| **Zen** ([config](modules/home/zen.nix)) | Web browser with iCloud Passwords | cask |
-| **Claude** | Desktop client for Claude | cask |
-| **OpenUsage** ([config](modules/home/openusage)) | AI usage limits in the menu bar | cask |
-| **Vesktop** ([config](modules/home/vesktop)) | Discord client based on Vencord | cask |
-| **Spotify** | Music streaming | cask |
-| **Termius** | SSH client | App Store |
-| **gh** | GitHub command line interface | brew |
-| **mole** | System cleanup utility | brew |
-| **pinentry-mac** | Passphrase prompt for GPG | brew |
-
-The wallpaper is set on every switch ([config](modules/home/wallpaper)).
 
 ## Installing
 

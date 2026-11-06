@@ -1,6 +1,5 @@
 {
   imports = [
-    ./antigravity
     ./claude-code
     ./ghostty.nix
     ./git.nix
