@@ -52,8 +52,6 @@
       ShowDate = 1;
       ShowDayOfWeek = true;
     };
-    controlcenter.BatteryShowPercentage = true;
-
     screencapture.target = "clipboard";
 
     # keys with no first-class option
