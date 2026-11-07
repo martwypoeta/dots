@@ -3,6 +3,8 @@
     enable = true;
     interactiveShellInit = ''
       set -g fish_greeting
+      # hide starship warnings like command timeouts, keep errors
+      set -gx STARSHIP_LOG error
     '';
   };
 
