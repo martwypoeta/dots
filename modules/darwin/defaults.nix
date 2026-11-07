@@ -55,11 +55,6 @@
 
     # keys with no first-class option
     CustomUserPreferences = {
-      NSGlobalDomain = {
-        # orange
-        AppleAccentColor = 1;
-      };
-
       "com.apple.finder".ShowRecentTags = false;
 
       "com.apple.screencapture" = {
