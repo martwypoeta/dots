@@ -23,7 +23,6 @@
         "/System/Applications/Mail.app"
         "/System/Applications/Notes.app"
         "/Applications/Claude.app"
-        "/Applications/Zen.app"
         "/Applications/Spotify.app"
       ];
       persistent-others = [];
