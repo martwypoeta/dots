@@ -1,6 +1,7 @@
 {
   imports = [
     ./claude-code
+    ./firefox.nix
     ./ghostty.nix
     ./git.nix
     ./gpg
@@ -9,7 +10,6 @@
     ./vesktop
     ./vscode
     ./wallpaper
-    ./zen.nix
   ];
 
   home.stateVersion = "25.11";

@@ -29,13 +29,13 @@
 
     casks = [
       "claude"
+      "firefox"
       "ghostty"
       "roblox"
       "robloxstudio"
       "spotify"
       "vesktop"
       "visual-studio-code"
-      "zen"
     ];
 
     brews = [

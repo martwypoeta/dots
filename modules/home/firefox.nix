@@ -24,7 +24,7 @@ let
     "plowe-0"
   ];
 in {
-  targets.darwin.defaults."app.zen-browser.zen" = {
+  targets.darwin.defaults."org.mozilla.firefox" = {
     EnterprisePoliciesEnabled = true;
 
     # homebrew does the updating
