@@ -32,7 +32,6 @@
       "firefox"
       "ghostty"
       "roblox"
-      "robloxstudio"
       "spotify"
       "vesktop"
       "visual-studio-code"
