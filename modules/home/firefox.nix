@@ -47,6 +47,11 @@ in {
       "browser.warnOnQuitShortcut" = locked false;
       "signon.autofillForms" = locked false;
       "signon.generation.enabled" = locked false;
+
+      # new tab wallpaper, value is the title from mozilla's newtab-wallpapers-v2 remote settings
+      "browser.newtabpage.activity-stream.newtabWallpapers.enabled" = locked true;
+      "browser.newtabpage.activity-stream.newtabWallpapers.user.enabled" = locked true;
+      "browser.newtabpage.activity-stream.newtabWallpapers.wallpaper" = locked "suspension-bridge";
     };
 
     ExtensionSettings = {
