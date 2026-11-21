@@ -1,6 +1,5 @@
 {
   config,
-  inputs,
   pkgs,
   ...
 }: let
@@ -38,8 +37,6 @@ in {
   };
 
   nixpkgs.config.allowUnfree = true;
-  # nixpkgs lags behind claude code releases, this overlay follows them within hours
-  nixpkgs.overlays = [inputs.claude-code.overlays.default];
 
   environment.systemPackages = [
     pkgs.fastfetch

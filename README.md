@@ -26,7 +26,6 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 - [Starship](https://starship.rs/), no nerd font needed
 - [zoxide](https://github.com/ajeetdsouza/zoxide), `cd` is aliased to `z`
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
-- [Claude Code](https://github.com/anthropics/claude-code) from [claude-code-nix](https://github.com/sadjow/claude-code-nix) ([config](modules/home/claude-code))
 - [git](modules/home/git.nix) and [gpg](modules/home/gpg) with pinentry-mac
 - node 24, pnpm and uv for JavaScript and Python
 

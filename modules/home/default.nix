@@ -1,6 +1,6 @@
 {
   imports = [
-    ./claude-code
+    ./claude-desktop
     ./firefox.nix
     ./ghostty.nix
     ./git.nix
