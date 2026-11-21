@@ -40,12 +40,12 @@
     casks = [
       "chatgpt"
       "claude"
-      "firefox"
       "ghostty"
       "roblox"
       "spotify"
       "vesktop"
       "visual-studio-code"
+      "zen"
     ];
 
     brews = [
