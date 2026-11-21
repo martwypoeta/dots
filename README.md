@@ -8,6 +8,8 @@
 
 **Shell:** [fish](https://fishshell.com/) ([config](modules/home/shell.nix))
 
+**Browser:** [Zen](#browser)
+
 ## Layout
 
 - [`flake.nix`](flake.nix): inputs and wiring, nothing else
@@ -48,6 +50,23 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 - Open in GitHub, two flavours
+
+</details>
+
+## Browser
+
+[Zen](https://zen-browser.app/), installed with Homebrew. Its settings aren't in the flake, so they're set by hand.
+
+<details>
+<summary>manual setup (click)</summary>
+
+- **Extensions:** [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) and [iCloud Passwords](https://addons.mozilla.org/firefox/addon/icloud-passwords/), both pinned to the toolbar
+- **uBlock Origin filter lists:** keep the defaults and also turn on the cookie notice lists and AdGuard Popup Overlays (under Annoyances)
+- **Updates:** Settings, General, Updates, don't install updates automatically. Homebrew does the updating
+- **Passwords:** Settings, Privacy & Security, Passwords, turn off asking to save passwords, autofill and strong password suggestions. iCloud Passwords handles them
+- **Autofill:** turn off saving and filling addresses and payment methods
+- **Data collection:** Settings, Privacy & Security, turn off everything under data collection
+- **Default browser:** turn off the check that asks to make Zen the default
 
 </details>
 
