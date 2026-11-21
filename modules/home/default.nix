@@ -9,7 +9,6 @@
     ./shell.nix
     ./vesktop
     ./vscode
-    ./wallpaper
   ];
 
   home.stateVersion = "25.11";
