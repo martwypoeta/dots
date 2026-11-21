@@ -38,6 +38,7 @@
     };
 
     casks = [
+      "chatgpt"
       "claude"
       "firefox"
       "ghostty"
