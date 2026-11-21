@@ -3,7 +3,7 @@
     enable = true;
     # macOS ships git
     package = null;
-    # signing.signByDefault = true;
+    signing.signByDefault = true;
 
     settings = {
       user.name = "martwypoeta";
