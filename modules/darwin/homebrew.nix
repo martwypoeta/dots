@@ -58,23 +58,6 @@
       Xcode = 497799835;
       "uBlock Origin Lite" = 6745342698;
     };
-
-    # installed from the Marketplace with `code --install-extension`
-    vscode = [
-      "adpyke.codesnap"
-      "antfu.open-in-github-button"
-      "antfu.theme-vitesse"
-      "astro-build.astro-vscode"
-      "catppuccin.catppuccin-vsc-icons"
-      "fabiospampinato.vscode-open-in-github"
-      "jnoortheen.nix-ide"
-      "ms-python.debugpy"
-      "ms-python.python"
-      "ms-python.vscode-pylance"
-      "ms-python.vscode-python-envs"
-      "naumovs.color-highlight"
-      "vue.volar"
-    ];
   };
 
   # runs after homebrew, so a fresh Xcode from the App Store is picked up in the same switch

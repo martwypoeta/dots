@@ -16,7 +16,7 @@
 - [`modules/darwin`](modules/darwin): the system side
   - [`system.nix`](modules/darwin/system.nix): user, nix settings, shell, packages, fonts
   - [`defaults.nix`](modules/darwin/defaults.nix): macOS preferences
-  - [`homebrew.nix`](modules/darwin/homebrew.nix): casks, brews, App Store apps, VS Code extensions
+  - [`homebrew.nix`](modules/darwin/homebrew.nix): casks, brews, App Store apps
 - [`modules/home`](modules/home): the user side, one module per app. Apps with their own config files get a directory, with the files next to its `default.nix`
 
 GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew is handled by [nix-homebrew](https://github.com/zhaofengli/nix-homebrew) with the taps pinned in `flake.lock`.
@@ -34,7 +34,7 @@ GUI apps are Homebrew casks, CLI tools come from nixpkgs, never both. Homebrew i
 
 ## Editor
 
-[VS Code](https://code.visualstudio.com/) ([config](modules/home/vscode)). Settings are linked from the repo.
+[VS Code](https://code.visualstudio.com/) ([config](modules/home/vscode)). Settings are linked from the repo. Extensions are installed from the Marketplace on switch and VS Code keeps them updated.
 
 - Theme: [Vitesse Dark Soft](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
 - Icons: [Catppuccin Icons](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
