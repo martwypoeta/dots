@@ -26,6 +26,7 @@
         "/System/Applications/Notes.app"
         "/Applications/Claude.app"
         "/Applications/Spotify.app"
+        "/System/Applications/Messages.app"
       ];
       persistent-others = [];
       # hot corners: top left opens Launchpad (11), the rest are off (1)
