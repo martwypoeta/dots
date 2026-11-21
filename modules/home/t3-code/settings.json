@@ -1,0 +1,18 @@
+{
+  "defaultTheme": "t3-chat",
+  "defaultThemeSetAt": "2026-11-21T00:00:00.000Z",
+  "providerInstances": {
+    "antigravity": {
+      "driver": "antigravity",
+      "enabled": true
+    },
+    "claudeAgent": {
+      "driver": "claudeAgent",
+      "enabled": true
+    },
+    "codex": {
+      "driver": "codex",
+      "enabled": false
+    }
+  }
+}

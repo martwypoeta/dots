@@ -10,7 +10,7 @@ in {
   options.home.mergeJson = lib.mkOption {
     type = lib.types.attrsOf lib.types.path;
     default = {};
-    description = "JSON merged into files relative to the home directory on every switch. Declared keys win, the rest is kept.";
+    description = "JSON merged into files relative to the home directory on every switch. Merged deeply, declared keys win and the rest is kept (lists are replaced).";
   };
 
   config.home.activation.mergeJson = lib.mkIf (files != {}) (
@@ -19,7 +19,7 @@ in {
         local target="$HOME/$1" current="$HOME/$1"
         [ -f "$target" ] || current=/dev/null
         local merged
-        merged=$(${lib.getExe pkgs.jq} -s add "$current" "$2")
+        merged=$(${lib.getExe pkgs.jq} -s 'reduce .[] as $x ({}; . * $x)' "$current" "$2")
         run mkdir -p "$(dirname "$target")"
         run --quiet tee "$target" <<< "$merged"
       }
