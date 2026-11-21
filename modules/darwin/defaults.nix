@@ -2,6 +2,7 @@
   system.defaults = {
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark";
+      AppleWindowTabbingMode = "always";
       "com.apple.trackpad.forceClick" = true;
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticInlinePredictionEnabled = false;
@@ -35,6 +36,9 @@
 
     finder = {
       AppleShowAllFiles = true;
+      # search the current folder, not the whole mac
+      FXDefaultSearchScope = "SCcf";
+      FXRemoveOldTrashItems = true;
       FXPreferredViewStyle = "icnv";
       NewWindowTarget = "Other";
       NewWindowTargetPath = "file://${config.users.users.${config.system.primaryUser}.home}/Downloads/";
@@ -54,6 +58,9 @@
 
     # keys with no first-class option
     CustomUserPreferences = {
+      # 1 is orange (-1 graphite, 0 red, 2 yellow, 3 green, 4 blue, 5 purple, 6 pink)
+      NSGlobalDomain.AppleAccentColor = 1;
+
       "com.apple.finder".ShowRecentTags = false;
 
       "com.apple.screencapture" = {
