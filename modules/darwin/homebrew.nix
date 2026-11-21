@@ -6,6 +6,16 @@
   # taps come from flake inputs, so brew only moves when flake.lock does
   nix-homebrew = {
     enable = true;
+    # brew from our own brew-src input, the version is the tag it's pinned to in flake.lock
+    package = let
+      lock = builtins.fromJSON (builtins.readFile ../../flake.lock);
+      version = lock.nodes.${lock.nodes.root.inputs.brew-src}.original.ref;
+    in
+      inputs.brew-src
+      // {
+        name = "brew-${version}";
+        inherit version;
+      };
     user = config.system.primaryUser;
     autoMigrate = true;
     mutableTaps = false;
