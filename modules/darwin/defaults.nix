@@ -2,6 +2,7 @@
   system.defaults = {
     NSGlobalDomain = {
       AppleInterfaceStyle = "Dark";
+      AppleIconAppearanceTheme = "RegularDark";
       AppleWindowTabbingMode = "always";
       "com.apple.trackpad.forceClick" = true;
       NSAutomaticCapitalizationEnabled = false;
