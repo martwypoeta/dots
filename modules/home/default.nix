@@ -6,6 +6,7 @@
     ./gpg
     ./merge-json.nix
     ./shell.nix
+    ./t3-code
     ./vesktop
     ./vscode
   ];

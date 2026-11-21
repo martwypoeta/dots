@@ -42,6 +42,7 @@
       "ghostty"
       "roblox"
       "spotify"
+      "t3-code"
       "vesktop"
       "visual-studio-code"
       "zen"
