@@ -1,7 +1,7 @@
 {
   programs.claude-code = {
     enable = true;
-    # becomes ~/.claude/CLAUDE.md
+    # becomes ~/.claude/CLAUDE.md, the Code tab in Claude desktop reads it too
     context = ./global-instructions.md;
   };
 

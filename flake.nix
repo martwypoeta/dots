@@ -28,10 +28,6 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-    claude-code = {
-      url = "github:sadjow/claude-code-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = inputs @ {
