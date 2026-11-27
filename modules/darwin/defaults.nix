@@ -60,8 +60,8 @@
 
     # keys with no first-class option
     CustomUserPreferences = {
-      # 1 is orange (-1 graphite, 0 red, 2 yellow, 3 green, 4 blue, 5 purple, 6 pink)
-      NSGlobalDomain.AppleAccentColor = 1;
+      # 4 is blue (-1 graphite, 0 red, 1 orange, 2 yellow, 3 green, 5 purple, 6 pink)
+      NSGlobalDomain.AppleAccentColor = 4;
 
       "com.apple.finder".ShowRecentTags = false;
       "com.apple.Music".userWantsPlaybackNotifications = false;
