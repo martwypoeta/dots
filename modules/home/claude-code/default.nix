@@ -6,4 +6,6 @@
   };
 
   home.mergeJson.".claude.json" = ./config.json;
+  # plugins synced from the claude.ai account load everywhere, so turn off the unwanted ones here
+  home.mergeJson.".claude/settings.json" = ./settings.json;
 }
