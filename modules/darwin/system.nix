@@ -30,6 +30,10 @@ in {
   programs.fish.enable = true;
   environment.shells = [pkgs.fish];
 
+  # GUI apps (e.g. T3 Code) don't inherit the shell env, and the nixpkgs claude-code
+  # wrapper only trusts the API's CA chain when NIX_SSL_CERT_FILE is set
+  launchd.user.envVariables.NIX_SSL_CERT_FILE = "/etc/ssl/certs/ca-certificates.crt";
+
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
