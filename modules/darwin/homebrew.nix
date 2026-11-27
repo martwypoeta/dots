@@ -40,6 +40,7 @@
     casks = [
       "claude"
       "ghostty"
+      "openusage"
       "roblox"
       "t3-code"
       "vesktop"

@@ -64,6 +64,7 @@
       NSGlobalDomain.AppleAccentColor = 1;
 
       "com.apple.finder".ShowRecentTags = false;
+      "com.apple.Music".userWantsPlaybackNotifications = false;
 
       "com.apple.screencapture" = {
         showsClicks = true;
