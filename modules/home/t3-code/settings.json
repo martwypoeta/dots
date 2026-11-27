@@ -1,6 +1,6 @@
 {
-  "defaultTheme": "t3-chat",
-  "defaultThemeSetAt": "2026-11-21T00:00:00.000Z",
+  "defaultTheme": "graphite",
+  "defaultThemeSetAt": "2026-11-27T00:00:00.000Z",
   "sidebarAutoSettleAfterDays": null,
   "sidebarAutoSettleOnMerge": false,
   "providerInstances": {
