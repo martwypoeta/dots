@@ -6,7 +6,7 @@
   Example: `fix: Pin Python to 3.14 for psycopg-binary wheels`
 - Keep the subject line short (about 72 characters). Add a body only when the "why" is not obvious.
 - Never add `Co-Authored-By` lines, "Generated with Claude Code" footers, or any other attribution or session headers to commit messages.
-- Commit and push only when I ask. Never use `--no-verify` or force-push without asking.
+- Commit only when I ask, and always push right after committing. Never use `--no-verify` or force-push without asking.
 
 ## Pull requests
 - Use the same Conventional Commits style for the title.

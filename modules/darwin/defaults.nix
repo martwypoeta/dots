@@ -21,12 +21,12 @@
         "/System/Cryptexes/App/System/Applications/Safari.app"
         "/Applications/Vesktop.app"
         "/Applications/Ghostty.app"
-        "/Applications/Visual Studio Code.app"
         "/System/Applications/Mail.app"
         "/System/Applications/Notes.app"
         "/Applications/Claude.app"
         "/System/Applications/Music.app"
         "/System/Applications/Messages.app"
+        "/Applications/T3 Code (Beta).app"
       ];
       persistent-others = [];
       # hot corners: top left opens Launchpad (11), the rest are off (1)
